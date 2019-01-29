@@ -1,0 +1,60 @@
+{
+  "expenses": [
+    {
+      "category": {
+        "options": [
+          {
+            "label": "food",
+            "value": "food"
+          }
+        ],
+        "selected": {
+          "label": "food",
+          "value": "food"
+        }
+      },
+      "description": "i ate stuff",
+      "amount": "$6.00",
+      "date": "12-17-2016"
+    },
+    {
+      "date": "12-17-2016",
+      "category": {
+        "options": [
+          {}
+        ]
+      },
+      "description": "pizza",
+      "amount": "$10.00",
+      "editRow": ""
+    },
+    {
+      "date": "12-17-2016",
+      "category": {
+        "options": [
+          {}
+        ]
+      },
+      "description": "taxi ride",
+      "amount": "$30",
+      "editRow": ""
+    },
+    {
+      "date": "12-19-2016",
+      "category": {
+        "options": [
+          {}
+        ]
+      },
+      "description": "dinner",
+      "amount": "$12",
+      "editRow": ""
+    }
+  ],
+  "reportId": "f234234",
+  "employeeId": "4423 rew",
+  "summary": "I spent lots of money",
+  "!data": {
+    "hasAddedFirstExpense": ""
+  }
+}

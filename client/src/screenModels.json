@@ -1,6 +1,68 @@
 {
   "menu": {
     "type": "object",
-    "properties": {}
+    "properties": {},
+    "id": "menu"
+  },
+  "expensereport": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "reportId": {
+        "type": "string"
+      },
+      "employeeId": {
+        "type": "string"
+      },
+      "expenses": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "date",
+              "update": {
+                "type": "none"
+              },
+              "format": "MM-DD-YYYY"
+            },
+            "category": {
+              "type": "select"
+            },
+            "description": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "amount": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "editRow": {
+              "type": "action"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "addRow": {
+        "type": "action"
+      },
+      "summary": {
+        "type": "string"
+      },
+      "submit": {
+        "type": "action"
+      },
+      "auth": {
+        "type": "action"
+      }
+    },
+    "id": "expensereport"
   }
 }

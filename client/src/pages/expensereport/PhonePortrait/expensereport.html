@@ -1,0 +1,77 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="secondary" data-comp-id="navbar.1" style="">
+        <button data-comp-id="button.1" icon-only="" ion-button="" menuToggle="">
+            <ion-icon class="ion-ios-menu"></ion-icon>
+        </button>
+        <ion-title data-comp-id="title.1">
+            <span data-comp-id="text.1" ion-text="">Expense Report</span>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.1" right=""></ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content data-comp-id="content.1">
+    <ion-list data-comp-id="list.1">
+        <ion-item data-comp-id="input.1">
+            <ion-label color="dark" style="width: 94px;">Report Id</ion-label>
+            <ion-input [(ngModel)]="data.reportId" [readonly]="true"
+                placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.2">
+            <ion-label color="dark" style="width: 94px;">Employee ID</ion-label>
+            <ion-input [(ngModel)]="data.employeeId" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.3">
+            <ion-label color="dark" style="width: 94px;">Summary</ion-label>
+            <ion-input [(ngModel)]="data.summary" type="text"></ion-input>
+        </ion-item>
+        <ion-list-header color="light" data-comp-id="list-header.1">
+            <span data-comp-id="text.2" ion-text="">Expenses</span>
+        </ion-list-header>
+        <ion-item (click)="action('expenses[item].editRow', [i])"
+            *ngFor="let item of data.expenses;let i = index" data-comp-id="item.1"
+            style="padding: 0px 0px 0px 10px;">
+            <ion-icon class="ion-ios-arrow-forward" color="good" data-comp-id="icon.1"
+                item-end="" style=""></ion-icon>
+            <ion-row data-comp-id="row.1">
+                <ion-col data-comp-id="column.1" style="max-width: 20px; padding: 7px 5px;">
+                    <div color="dark" data-comp-id="text.3" ion-text="" style="font-size: 16px;">{{i + 1}}.</div>
+                </ion-col>
+                <ion-col data-comp-id="column.2">
+                    <div [innerHTML]="item.date" data-comp-id="text.4" ion-text=""
+                        style="font-size: 16px; margin: 2px 0px;"></div>
+                    <div color="dark" data-comp-id="text.5" ion-text=""
+                        style="font-size: 16px; margin: 2px0px;">Category:
+                        {{item.category.selected}}</div>
+                    <div [innerHTML]="item.description" data-comp-id="text.6" ion-text=""
+                        style="font-size: 16px; margin: 2px 0px;"></div>
+                </ion-col>
+                <ion-col align-self-center="" data-comp-id="column.3" style="text-align: right;">
+                    <div [innerHTML]="item.amount" color="good" data-comp-id="text.7" ion-text=""
+                        style="font-size: 20px;"></div>
+                </ion-col>
+            </ion-row>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer class="footer" data-comp-id="footer.1">
+    <ion-row data-comp-id="row.2" style="background-size: 100%;">
+        <ion-col data-comp-id="column.4" style="padding: 5px 10px;">
+            <button (click)="action('addRow')" color="secondary" data-comp-id="fab-button.1"
+                ion-fab="" style="">
+                <ion-icon class="ion-ios-add-outline" style="font-size: 40px;"></ion-icon>
+            </button>
+            <div color="dark" data-comp-id="text.8" ion-text=""
+                style="margin: 4px 0px 0px 14px;">Add</div>
+        </ion-col>
+        <ion-col col-6="" data-comp-id="column.5"></ion-col>
+        <ion-col data-comp-id="column.6" style="padding: 5px 10px;">
+            <button (click)="action('submit')"
+                [disabled]="!data.expenses ||  data.expenses.length == 0" color="good"
+                data-comp-id="fab-button.2" ion-fab="" style="">
+                <ion-icon class="ion-md-arrow-forward" style="font-size: 30px;"></ion-icon>
+            </button>
+            <div color="dark" data-comp-id="text.9" ion-text=""
+                style="margin: 4px 0px 0px 6px;">Submit</div>
+        </ion-col>
+    </ion-row>
+</ion-footer>
