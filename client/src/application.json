@@ -3,7 +3,12 @@
   "description": "",
   "defaultLayout": "PhonePortrait",
   "previewToken": "dcc94390",
-  "clientVersion": "6.0.27",
+  "clientVersion": "6.1.0-dev",
   "theme": "Anchor",
-  "creatorId": "yura"
+  "creatorId": "yura",
+  "isBuiltInTemplate": false,
+  "screensCount": 1,
+  "id": "yuraimportreadme6027",
+  "creatorName": "yura",
+  "explorations": []
 }
