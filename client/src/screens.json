@@ -1,13 +1,5 @@
 {
   "id": "__BASE__",
   "name": "YuraImportReadme6027",
-  "screens": [
-    {
-      "id": "expensereport",
-      "name": "Expense Report",
-      "sourceScreenId": "expensereport",
-      "sourceAppId": "ExpenseTracker"
-    }
-  ],
-  "startScreen": "expensereport"
+  "screens": []
 }
