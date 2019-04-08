@@ -1,5 +1,13 @@
 {
   "id": "__BASE__",
   "name": "YuraImportReadme6027",
-  "screens": []
+  "screens": [
+    {
+      "id": "homeiconclassic",
+      "name": "HomeIconClassic",
+      "sourceScreenId": "Home_homeiconclassic",
+      "sourceAppId": "StrawberryTemplates"
+    }
+  ],
+  "startScreen": "homeiconclassic"
 }
