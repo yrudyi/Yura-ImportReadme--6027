@@ -8,10 +8,7 @@
             "value": "food"
           }
         ],
-        "selected": {
-          "label": "food",
-          "value": "food"
-        }
+        "selected": "food"
       },
       "description": "i ate stuff",
       "amount": "$6.00",
