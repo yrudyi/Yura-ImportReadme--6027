@@ -1,9 +1,12 @@
 {
   "template": {
-    "url": "http://ec2-18-205-185-213.compute-1.amazonaws.com:5000",
+    "url": "http://ec2-18-205-185-213.compute-1.amazonaws.com:5000/qadf",
     "method": "GET",
     "query": {},
-    "headers": {}
+    "headers": {},
+    "form": {},
+    "options": {},
+    "bodyType": "form"
   },
   "functions": {
     "wertw": []
