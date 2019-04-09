@@ -1,0 +1,11 @@
+{
+  "template": {
+    "url": "http://ec2-18-205-185-213.compute-1.amazonaws.com:5000",
+    "method": "GET",
+    "query": {},
+    "headers": {}
+  },
+  "functions": {
+    "GET_ec218205185213compute1amazonawscom5000": []
+  }
+}
