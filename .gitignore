@@ -23,7 +23,6 @@ node_modules/
 package-lock.json
 tmp/
 temp/
-temp-*
 $RECYCLE.BIN/
 
 client/hooks/
@@ -32,7 +31,6 @@ client/plugins/
 client/plugins/android.json
 client/plugins/ios.json
 client/src/published
-client/src/app/tsconfig.json
 client/www
 client/dist
 
